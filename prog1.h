@@ -19,7 +19,7 @@ struct Point
 
 // Custom comparator class for set of Points
 struct counterClockwise {
-    double getCounterClockwiseAngle(Point point) {
+    double getCounterClockwiseAngle(const Point &point) const {
         // Find counter clockwise angle 
         double angle = -1 * atan2(point.x, point.y);
         return angle;
