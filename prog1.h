@@ -25,7 +25,7 @@ struct counterClockwise {
         return angle;
     }
     // Sort with smallest counter clockwise angle -> largest counter clockwise angle
-    bool operator() (const Point &lhs, const Point &rhs) {
+    bool operator() (const Point &lhs, const Point &rhs) const {
         return getCounterClockwiseAngle(lhs) < getCounterClockwiseAngle(rhs);
     }
 };
